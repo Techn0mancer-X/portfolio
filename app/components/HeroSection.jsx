@@ -5,27 +5,27 @@ import { TypeAnimation } from "react-type-animation";
 const HeroSection = () => {
   return (
     <section>
-      <div className="grid grid-cols-1 sm:grid-cols-12">
-        <div className="col-span-6 place-self-center place-items-center grid lg:place-items-start ">
-          <div className="  max-w-fit text-3xl lg:text-6xl sm:text-xl font-extrabold mb-4  p-2">
-            <span className="text-transparent bg-clip-text bg-gradient-to-tr from-primary via-white/75 to-primary text-6xl">
-              I am Clayton Balzer
+      <div className="grid grid-cols-1 sm:grid-cols-12 my-20">
+        <div className="col-span-6 place-self-center place-items-center grid lg:place-items-start">
+          <div className="max-w-fit text-2xl lg:text-3xl sm:text-xl font-extrabold mb-4 px-2 mx-auto">
+            <span className="text-transparent bg-clip-text bg-gradient-to-tr from-secondary via-white/75 to-primary lg:text-6xl md:text-4xl sm:text-3xl flex justify-center items-center p-2">
+               Clayton Balzer
             </span>{" "}
             <br />
             <TypeAnimation
               sequence={[
-                "Fullstack Developer.",
-                3000,
+                "Web Developer.",
+                3500,
                 "UI/UX Designer.",
-                3000,
+                3500,
                 "Programmer.",
-                3000,
+                3500,
                 "Dungeon Master.",
-                3000,
+                3500,
               ]}
               wrapper="span"
               speed={50}
-              style={{ display: "flex", wrap: "nowrap" }}
+              className="flex flex-nowrap  text-highlight justify-center lg:text-6xl md:text-4xl sm:text-3xl "
               repeat={Infinity}
               cursor={false}
             />
