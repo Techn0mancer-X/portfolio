@@ -5,6 +5,7 @@ import NavLink from "./NavLink";
 import MenuOverlay from "./MenuOverlay";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
+import Image from "next/image"
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navLinks = [
@@ -26,13 +27,13 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav className="fixed mx-auto border border-highlight top-0 left-0 right-0  z-10 bg-primary/90 ">
+    <nav className="fixed container mx-auto border border-highlight/50 top-0 left-0 right-0  z-10 bg-primary/90  ">
       <div className="flex lg:py-4 flex-wrap justify-between items-center mx-auto px-4 py-2 ">
         <Link
           href="/"
           className=" text-2xl md:text-5xl text-highlight font-semibold"
         >
-          LOGO
+          <Image src="/blue-ring.jpg" alt="blue ring logo" width={100} height={100} className="rounded-md"/>
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
